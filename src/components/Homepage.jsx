@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../stylings/HomePage.css"
 
 
 function HomePage() {
@@ -14,7 +15,7 @@ function HomePage() {
 
       <header className="home-hero-section">
         <nav className="nav">
-          <h1 className="logo">OutdoorFinder</h1>
+          <h1 className="logo">Journey</h1>
           <ul className="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#locations">Locations</a></li>
