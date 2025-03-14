@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import "../stylings/HomePage.css"
-
+import '../stylings/HomePage.css'; 
 
 function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,16 +11,10 @@ function HomePage() {
 
   return (
     <div className="homepage-container">
-
       <header className="home-hero-section">
-        <nav className="nav">
           <h1 className="logo">Journey</h1>
-          <ul className="nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+
+
         <div className="hero-content">
           <h2>Discover Beautiful State Parks & Gardens</h2>
           <p>Plan your perfect day outdoors in just a few clicks.</p>
@@ -37,7 +30,6 @@ function HomePage() {
           </form>
         </div>
       </header>
-
 
       <main>
         <section id="features" className="features">
@@ -69,8 +61,6 @@ function HomePage() {
               <h4>Rosewood Botanical Garden</h4>
               <p>Explore exotic plant species and colorful flower beds.</p>
             </div>
-            
-
           </div>
         </section>
       </main>
