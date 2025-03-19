@@ -1,13 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../stylings/Navbar.css"; 
 
 function NavBar() {
   return (
     <div id="navbar-container" className="sidenav">
-      <a href="#" id="about">About</a>
-      <a href="#" id="blog">Blog</a>
-      <a href="#" id="projects">Projects</a>
-      <a href="#" id="contact">Contact</a>
+      <Link to="/" id="about">Home</Link>
+      <Link to="/login" id="blog">Login</Link>
+      <Link to="/map" id="projects">Map</Link>
     </div>
   );
 }

@@ -1,18 +1,20 @@
-// App.jsx
 import React from "react";
-import HomePage from "./components/HomePage";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./components/Homepage";
+import Login from "./components/Login";
 import MapView from "./components/MapView";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div style={{ marginLeft: "60px" }}>
-        <HomePage />
-        <MapView />
-      </div>
-    </>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/map" element={<MapView />} />
+      </Routes>
+    </Router>
   );
 }
 
