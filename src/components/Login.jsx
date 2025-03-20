@@ -25,61 +25,51 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-box">
-        <h2 className="title">Login</h2>
-        {error && <p className="error-message">{error}</p>}
-        <form onSubmit={handleSubmit}>
+    <>
+        <div className="login-page">
+            <div className="login">
 
-            <div className="login-field-row">
-                <div className="login-field">
-                    <label className="login-label">Username</label>
-                    <div className="login-control">
-                    <input
-                        className="login-input"
-                        type="text"
-                        placeholder="Username or Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                <form action="/action_page.php">
+                    <div className="row">
+
+                        <h2>Where Will Your Journey Take You?</h2>
+
+                        
+                        <div className="vl">
+                            <span className="vl-innertext"></span>
+                        </div>
+                        
+
+                        <div className="first-col">
+                          <img src="Journey3.png" alt="Journey" className="login-logo" />
+                          <div className="sign-up-blurb">
+                            <p className="blurb-text">Don't Have an Account?</p>
+                            <p className="blurb-text">Start Your Journey Today!</p>
+                            <a href="#" className="sign-up">Sign Up!</a>
+                          </div>
+                        </div>
+
+                        
+
+                        <div className="col">
+                            <div className="hide-md-lg">
+
+                            </div>
+
+                            <h2>Login</h2>
+                            <input type="text" name="username" placeholder="Username" required />
+                            <input type="password" name="password" placeholder="Password" required />
+                            <input type="submit" value="Login" />
+                            <a href="#" className="forgot-password">Forgot Password?</a>
+                        </div>
+
                     </div>
+                </form>
             </div>
-        
-
-                <div className="login-field">
-                    <label className="login-label">Password</label>
-                    <div className="login-control">
-                    <input
-                        className="login-input"
-                        type="password"
-                        placeholder="Enter your password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                    </div>
-                </div>
-            </div>
-
             
-
-            <div className="login-field">
-                <div className="login-button-container">
-                    <button className="login-button is-primary">Login</button>
-                </div>
-            </div>
-
-            <div className="forgot-password">
-                <a>Forgot Password?</a>
-            </div>
-
-            <div>
-                <p>Don't have an account? <a>Sign up!</a></p>
-                
-            </div>
-                
-        </form>
-      </div>
-    </div>
+            
+        </div>
+    </>
   );
 }
 

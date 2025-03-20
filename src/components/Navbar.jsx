@@ -8,6 +8,7 @@ function NavBar() {
       <Link to="/" id="about">Home</Link>
       <Link to="/login" id="blog">Login</Link>
       <Link to="/map" id="projects">Map</Link>
+      <Link to="/register" id="contact">Register</Link>
     </div>
   );
 }
